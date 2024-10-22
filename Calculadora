@@ -1,26 +1,34 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, resultado;
-    char operador;
+    int a, b;
+    float resultado;
+    int operador;
 
     printf("Ingrese dos numeros: ");
     scanf("%d %d", &a, &b);
 
-    printf("Ingrese un operador (+, -, *, /): ");
-    scanf("%c", operador);
+    printf("Ingrese un operador  ");
+     printf("1: Suma");
+       printf("25 : Resta");
+         printf("3: Multiplicacion");
+           printf("4: Division");
+    scanf("%d", &operador);
+   
+
+
 
     switch (operador) {
-        case '+':
+        case 1:
+            resultado = a + b;
+            break;
+        case 2 :
             resultado = a - b;
             break;
-        case '-':
-            resultado = a - b;
-            break;
-        case '*':
+        case 3:
             resultado = a * b;
             break;
-        case '/':
+        case 4:
             resultado = a / b;
             break;
         default:
@@ -28,6 +36,6 @@ int main() {
             return 1;
     }
 
-    printf("El resultado es: %c\n", resultado);
+    printf("El resultado es: %f\n", resultado);
     return 0;
 }
