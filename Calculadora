@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, resultado;
+    int a, b;
+    float resultado;
     char operador;
 
     printf("Ingrese dos numeros: ");
